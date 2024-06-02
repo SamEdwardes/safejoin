@@ -16,8 +16,9 @@ Suggests:
     rmarkdown
 Imports: 
     dplyr,
-    glue
-RoxygenNote: 7.1.1
+    glue,
+    lifecycle
+RoxygenNote: 7.2.3
 URL: https://github.com/SamEdwardes/safejoin
 BugReports: https://github.com/SamEdwardes/safejoin/issues
-VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)

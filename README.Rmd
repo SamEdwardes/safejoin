@@ -21,11 +21,19 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of safejoin is to guarantee that when performing joins that extra rows are not added to your data. safejoin is a wrapper around the [`dplyr::left_join`](https://dplyr.tidyverse.org/reference/join.html) function.
+## 🚧 Deprecation notice 🚧
+
+As of `safejoin` version 0.2.0 the package has been deprecated.  As of version [`1.1.1`](https://dplyr.tidyverse.org/news/index.html#dplyr-111) dplyr has a `relationship` argument that provides the same functionality that `safejoin` was created for. See the dplyr docs [https://dplyr.tidyverse.org/reference/mutate-joins.html](https://dplyr.tidyverse.org/reference/mutate-joins.html) for complete details.
+
+Please use `dplyr::left_join()` with the `relationship` argument instead.
+
+## About
+
+The goal of safejoin is to guarantee that when performing joins that extra rows are not added to your data. safejoin is a wrapper around the [`dplyr::left_join`](https://dplyr.tidyverse.org/reference/mutate-joins.html) function.
 
 -   [Docs](https://safejoin-r.netlify.app/)
 -   [GitHub](https://github.com/SamEdwardes/safejoin/)
--   [CRAN](https://cran.r-project.org/web/packages/safejoin/index.html)
+-   [CRAN](https://CRAN.R-project.org/package=safejoin)
 
 ## Installation
 
@@ -66,7 +74,7 @@ safe_left_join(x, y, by = "key", action="warning")
 safe_left_join(x, y, by = "key", action="message")
 ```
 
-When a join is "safe" `safe_left_join` will have the exact same behavior as [`dplyr::left_join`](https://dplyr.tidyverse.org/reference/join.html).
+When a join is "safe" `safe_left_join` will have the exact same behavior as [`dplyr::left_join`](https://dplyr.tidyverse.org/reference/mutate-joins.html).
 
 ```{r}
 x <- data.frame(key = c("a", "b"), value_x = c(1, 2))
@@ -76,7 +84,7 @@ safe_left_join(x, y, by = "key")
 
 ## Other useful packages
 
-There are other packages that help solve similar problems. Most notably <https://github.com/krlmlr/dm> provides great features to treat data frames like a data base.
+There are other packages that help solve similar problems. Most notably <https://github.com/cynkra/dm> provides great features to treat data frames like a data base.
 
 ## Reference and Attribution
 
