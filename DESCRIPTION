@@ -1,6 +1,6 @@
 Package: safejoin
 Title: Perform "Safe" Table Joins
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
     person(given = "Sam",
            family = "Edwardes",
