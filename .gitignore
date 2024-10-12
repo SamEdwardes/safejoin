@@ -3,6 +3,9 @@
 .Rhistory
 .Rapp.history
 
+man/
+docs/
+
 # Session Data files
 .RData
 # User-specific files
