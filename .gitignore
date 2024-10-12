@@ -1,9 +1,10 @@
-safejoin.Rproj
-
 .Rproj.user
 # History files
 .Rhistory
 .Rapp.history
+
+man/
+docs/
 
 # Session Data files
 .RData

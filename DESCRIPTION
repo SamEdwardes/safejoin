@@ -1,6 +1,6 @@
 Package: safejoin
 Title: Perform "Safe" Table Joins
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
     person(given = "Sam",
            family = "Edwardes",
@@ -16,8 +16,9 @@ Suggests:
     rmarkdown
 Imports: 
     dplyr,
-    glue
-RoxygenNote: 7.1.1
+    glue,
+    lifecycle
+RoxygenNote: 7.2.3
 URL: https://github.com/SamEdwardes/safejoin
 BugReports: https://github.com/SamEdwardes/safejoin/issues
-VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
